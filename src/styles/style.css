@@ -1,3 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #21252b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Myriad Pro";
+  overflow: hidden;
+}
 
+.site-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 1440px;
+}
+
+.site-wrapper .about-me-wrapper {
+  display: flex;
+  width: 50%;
+}
+.site-wrapper .about-me-wrapper .about-me {
+  padding-left: 90px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  max-width: 408px;
+}
+.site-wrapper .about-me-wrapper .about-me .about-me-header {
+  font-size: 64px;
+}
+.site-wrapper .about-me-wrapper .about-me .about-me-text {
+  font-size: 14px;
+}
+
+.site-wrapper .portfolio-wrapper {
+  display: flex;
+  width: 50%;
+}
+.site-wrapper .portfolio-wrapper .portfolio {
+  padding-right: 90px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.site-wrapper .portfolio-wrapper .portfolio .portfolio-controls {
+  margin-bottom: 15px;
+}
+.site-wrapper .portfolio-wrapper .portfolio .portfolio-controls button {
+  border: none;
+  background: none;
+  color: white;
+  font-family: "Myriad Pro";
+  font-size: 22px;
+  opacity: 0.5;
+}
+.site-wrapper .portfolio-wrapper .portfolio .portfolio-controls button:focus {
+  outline: none;
+}
+.site-wrapper .portfolio-wrapper .portfolio .portfolio-controls .selected {
+  opacity: 1;
+}
+.site-wrapper .portfolio-wrapper .portfolio .portfolio-content {
+  width: 920px;
+  height: 350px;
+  white-space: nowrap;
+  overflow-x: scroll;
+  padding-left: 45px;
+}
+.site-wrapper .portfolio-wrapper .portfolio .portfolio-content .content-item {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  width: 350px;
+  height: 250px;
+  background-color: #15171b;
+  transition: all 0.2s ease-in-out;
+}
+.site-wrapper .portfolio-wrapper .portfolio .portfolio-content .content-item:hover {
+  opacity: 1 !important;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+.site-wrapper .portfolio-wrapper .portfolio .portfolio-content .visible {
+  display: inline-block;
+  transition: translateY(-50%);
+}
+.site-wrapper .portfolio-wrapper .portfolio .portfolio-content .hidden {
+  display: none;
+  transition: translateY(-50%);
+}
+.site-wrapper .portfolio-wrapper .portfolio .portfolio-content:hover .content-item {
+  opacity: 0.5;
+}
+
+/* width */
+.portfolio-content::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+.portfolio-content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.portfolio-content::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.portfolio-content::-webkit-scrollbar-thumb:hover {
+  background: blue;
+}
 
 /*# sourceMappingURL=style.css.map */

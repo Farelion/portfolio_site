@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import './styles/style.css';
-
+import Contact from './components/contact-page.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLink } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 class App extends React.Component {
   constructor(props) {
@@ -25,7 +27,7 @@ class App extends React.Component {
       commercialHighlight: "not-selected",
       nonCommercial: 'visible',
       nonCommercialHighlight: "not-selected"
-  })
+    })
   }
 
   showCommercial(){
@@ -35,7 +37,7 @@ class App extends React.Component {
       commercialHighlight: "selected",
       nonCommercial: 'hidden',
       nonCommercialHighlight: "not-selected"
-  })
+    })
   }
 
   showNonCommercial(){
@@ -45,7 +47,7 @@ class App extends React.Component {
       commercialHighlight: "not-selected",
       nonCommercial: 'visible',
       nonCommercialHighlight: "selected"
-  })
+    })
   }
 
   componentDidMount(){
@@ -72,6 +74,7 @@ class App extends React.Component {
   render(){
     return (
       <div className="site-wrapper">
+        <Contact/>
 
         <div className="about-me-wrapper">
           <div className="about-me">
@@ -90,13 +93,98 @@ class App extends React.Component {
               <button className={this.state.nonCommercialHighlight} onClick={this.showNonCommercial}>Non-commercial</button>
             </div>
             <div id="pc" className="portfolio-content">
-              <div className={'content-item ' + this.state.commercial}>comer</div>
-              <div className={'content-item ' + this.state.nonCommercial}>nonc</div>
-              <div className={'content-item ' + this.state.nonCommercial}>nonc</div>
-              <div className={'content-item ' + this.state.nonCommercial}>nonc</div>
-              <div className={'content-item ' + this.state.nonCommercial}>nonc</div>
-              <div className={'content-item ' + this.state.nonCommercial}>nonc</div>
-              <div className={'content-item ' + this.state.nonCommercial}>nonc</div>
+
+              <div className={'content-item ' + this.state.commercial}>
+                <div className="item-wrap">
+                  <div className="item-tag">commercial</div>
+                  <div className="item-title">Lorem Ipsum</div>
+                  <div className="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                  <div className="item-links">
+                    <a href="" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
+                    <div className="link-center"></div>
+                    <a href="" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={'content-item ' + this.state.nonCommercial}>
+                <div className="item-wrap">
+                  <div className="item-tag">Lorem Ipsum</div>
+                  <div className="item-title">Lorem Ipsum</div>
+                  <div className="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                  <div className="item-links">
+                    <a href="" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
+                    <div className="link-center"></div>
+                    <a href="" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={'content-item ' + this.state.nonCommercial}>
+                <div className="item-wrap">
+                  <div className="item-tag">Lorem Ipsum</div>
+                  <div className="item-title">Lorem Ipsum</div>
+                  <div className="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                  <div className="item-links">
+                    <a href="" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
+                    <div className="link-center"></div>
+                    <a href="" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={'content-item ' + this.state.nonCommercial}>
+                <div className="item-wrap">
+                  <div className="item-tag">Lorem Ipsum</div>
+                  <div className="item-title">Lorem Ipsum</div>
+                  <div className="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                  <div className="item-links">
+                    <a href="" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
+                    <div className="link-center"></div>
+                    <a href="" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={'content-item ' + this.state.nonCommercial}>
+                <div className="item-wrap">
+                  <div className="item-tag">Lorem Ipsum</div>
+                  <div className="item-title">Lorem Ipsum</div>
+                  <div className="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                  <div className="item-links">
+                    <a href="" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
+                    <div className="link-center"></div>
+                    <a href="" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={'content-item ' + this.state.nonCommercial}>
+                <div className="item-wrap">
+                  <div className="item-tag">Lorem Ipsum</div>
+                  <div className="item-title">Lorem Ipsum</div>
+                  <div className="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                  <div className="item-links">
+                    <a href="" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
+                    <div className="link-center"></div>
+                    <a href="" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={'content-item ' + this.state.nonCommercial}>
+                <div className="item-wrap">
+                  <div className="item-tag">Lorem Ipsum</div>
+                  <div className="item-title">Lorem Ipsum</div>
+                  <div className="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                  <div className="item-links">
+                    <a href="" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
+                    <div className="link-center"></div>
+                    <a href="" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

@@ -3,10 +3,10 @@
 ### [Live](https://farel.netlify.com/) </br>
 
 
-todo/ideas:
-fix controls buttons/animations 
-add gh link/contact
-add "scroll" text below big-text
-make it responsive
-fill out portfolio with links/text
-make scrolling smooth?
+todo/ideas:  </br>
+- fix controls buttons/animations </br>
+- add gh link/contact  </br>
+- add "scroll" text below big-text </br>
+- make it responsive </br>
+- fill out portfolio with links/text </br>
+- make scrolling smooth? </br>

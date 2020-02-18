@@ -4,7 +4,7 @@
 
 
 todo/ideas:  </br>
-- fix controls buttons/animations </br>
+- fix control buttons/ portfolio animations </br>
 - add gh link/contact  </br>
 - add "scroll" text below big-text </br>
 - make it responsive </br>

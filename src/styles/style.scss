@@ -336,12 +336,25 @@ a {
                 background-color: $light-mode-secondary-bg-color;
                 transition: all .2s ease-in-out;
                 flex: 0 0 45%;
+                position: relative;
+                overflow: hidden;
                 @include for-size(768) {  
                     flex: 0 0 100%;
                     margin-left: 0;
                     margin-right: 0;
                 }
-
+                .work-in-prog{
+                    position: absolute;
+                    text-align: center;
+                    top: -100px;
+                    left: -150px;
+                    width:150%;
+                    height: 100%;
+                    color: white;
+                    font-size: 40px;
+                    transform: rotate(-45deg);
+                    opacity: 0.4;
+                }
             }
 
             .content-item.visible:hover{

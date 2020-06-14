@@ -354,6 +354,8 @@ a {
   background-color: #DADDE2;
   transition: all 0.2s ease-in-out;
   flex: 0 0 45%;
+  position: relative;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .site-wrapper .portfolio-wrapper .portfolio .portfolio-content .content-item {
@@ -361,6 +363,18 @@ a {
     margin-left: 0;
     margin-right: 0;
   }
+}
+.site-wrapper .portfolio-wrapper .portfolio .portfolio-content .content-item .work-in-prog {
+  position: absolute;
+  text-align: center;
+  top: -100px;
+  left: -150px;
+  width: 150%;
+  height: 100%;
+  color: white;
+  font-size: 40px;
+  transform: rotate(-45deg);
+  opacity: 0.4;
 }
 .site-wrapper .portfolio-wrapper .portfolio .portfolio-content .content-item.visible:hover {
   opacity: 1 !important;

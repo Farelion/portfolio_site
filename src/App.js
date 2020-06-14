@@ -132,55 +132,15 @@ class App extends React.Component {
                       <div className={'content-item ' + this.state.nonCommercial}>
                         <div className="item-wrap">
                           <div className="item-tag">non-commercial</div>
-                          <div className="item-title">Lorem Ipsum</div>
-                          <div className="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                          <div className="item-title">Project Wooder</div>
+                          <div className="item-text">Simple PSD to HTML/CSS/JS project to show off. </div>
                           <div className="item-links">
-                            <a href="https://github.com/" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
+                            <a href="https://farelion.github.io/project-wooder/" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
                             <div className="link-center"></div>
-                            <a href="https://github.com/" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
+                            <a href="https://github.com/Farelion/project-wooder" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
                           </div>
                         </div>
                       </div>
-
-                      <div className={'content-item ' + this.state.nonCommercial}>
-                        <div className="item-wrap">
-                          <div className="item-tag">non-commercial</div>
-                          <div className="item-title">Lorem Ipsum</div>
-                          <div className="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
-                          <div className="item-links">
-                            <a href="https://github.com/" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
-                            <div className="link-center"></div>
-                            <a href="https://github.com/" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className={'content-item ' + this.state.nonCommercial}>
-                        <div className="item-wrap">
-                          <div className="item-tag">non-commercial</div>
-                          <div className="item-title">Lorem Ipsum</div>
-                          <div className="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
-                          <div className="item-links">
-                            <a href="https://github.com/" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
-                            <div className="link-center"></div>
-                            <a href="https://github.com/" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className={'content-item ' + this.state.nonCommercial}>
-                        <div className="item-wrap">
-                          <div className="item-tag">non-commercial</div>
-                          <div className="item-title">Lorem Ipsum</div>
-                          <div className="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
-                          <div className="item-links">
-                            <a href="https://github.com/" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
-                            <div className="link-center"></div>
-                            <a href="https://github.com/" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
-                          </div>
-                        </div>
-                      </div>
-
 
                       <div className={'content-item ' + this.state.commercial}>
                         <div className="item-wrap">
@@ -197,12 +157,49 @@ class App extends React.Component {
                       <div className={'content-item ' + this.state.nonCommercial}>
                         <div className="item-wrap">
                           <div className="item-tag">non-commercial</div>
-                          <div className="item-title">Lorem Ipsum</div>
-                          <div className="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                          <div className="item-title">Weather App</div>
+                          <div className="item-text">Classic Weather app project in React. </div>
                           <div className="item-links">
-                            <a href="https://github.com/" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
+                            <a href="https://weather-app-farel.netlify.app/" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
                             <div className="link-center"></div>
-                            <a href="https://github.com/" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
+                            <a href="https://github.com/Farelion/weather_app" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className={'content-item ' + this.state.nonCommercial}>
+                        <div className="item-wrap">
+                          <div className="item-tag">non-commercial</div>
+                          <div className="item-title">When to Play</div>
+                          <div className="item-text">Node/Express App for displaying Riot API data created to automate simple task.</div>
+                          <div className="item-links">
+                            <a href="https://github.com/Farelion/when_to_play" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className={'content-item ' + this.state.nonCommercial}>
+                        <div className="work-in-prog">WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS</div>
+                        <div className="item-wrap">
+                          <div className="item-tag">non-commercial</div>
+                          <div className="item-title">Lootfinder (react)</div>
+                          <div className="item-text">Web app that makes finding WoW items easier.</div>
+                          <div className="item-links">
+                            <a href="https://lootfinder.netlify.app/" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
+                            <div className="link-center"></div>
+                            <a href="https://github.com/Farelion/lf-react" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div className={'content-item ' + this.state.nonCommercial}>
+                        <div className="item-wrap">
+                          <div className="item-tag">non-commercial</div>
+                          <div className="item-title">Lootfinder DB Creator</div>
+                          <div className="item-text">Database file creator for "Lootfinder" project.</div>
+                          <div className="item-links">
+                            <a href="https://github.com/Farelion/lf-db-creator" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
                           </div>
                         </div>
                       </div>
@@ -210,12 +207,12 @@ class App extends React.Component {
                       <div className={'content-item ' + this.state.nonCommercial}>
                         <div className="item-wrap">
                           <div className="item-tag">non-commercial</div>
-                          <div className="item-title">Lorem Ipsum</div>
-                          <div className="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+                          <div className="item-title">NEW EXCITING PROJECT!</div>
+                          <div className="item-text">Coming soon.</div>
                           <div className="item-links">
-                            <a href="https://github.com/" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
+                            <a href="https://github.com/Farelion?tab=repositories" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
                             <div className="link-center"></div>
-                            <a href="https://github.com/" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
+                            <a href="https://github.com/Farelion?tab=repositories" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
                           </div>
                         </div>
                       </div>

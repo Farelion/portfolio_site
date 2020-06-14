@@ -1,5 +1,5 @@
 
-# Work in progress </br>
+# Work (always) in progress </br>
 ### [Live](https://farel.netlify.com/) </br>
 
 

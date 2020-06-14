@@ -1,6 +1,6 @@
 
 # Work (always) in progress </br>
-### [Live](https://farel.netlify.com/) </br>
+## [Live](https://farel.netlify.com/) </br>
 
 
 todo/ideas:  </br>

@@ -52,13 +52,13 @@ a {
     position: absolute;
     width: 100%;
     overflow: hidden;
-    background: #fff;
     top:0;
     left:0;
 }
 .background__lights{
     position: absolute;
     height: 100%;
+    z-index: -1; 
 }
 .lines {
     opacity: 0.05; 

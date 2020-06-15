@@ -15,6 +15,38 @@ a {
   text-decoration: none;
 }
 
+.container {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+
+.background__lights {
+  position: absolute;
+  height: 100%;
+}
+
+.lines {
+  opacity: 0.05;
+}
+
+.line {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #15171b;
+}
+
+.lights {
+  opacity: 0.9;
+}
+
+.light {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #21252b;
+}
+
 .sticky-cursor {
   z-index: 100;
   pointer-events: none;
@@ -23,8 +55,12 @@ a {
   border-radius: 50%;
   border: 1px solid #777;
   position: fixed;
-  transform: translateX(-50%) translateY(-50%);
+  top: 0;
+  left: 0;
+  margin-top: -15px;
+  margin-left: -15px;
   transform-origin: center center;
+  /* removed for now because its laggy with devtools open no idea why transition: all .15s ease-out;*/
 }
 @media (max-width: 768px) {
   .sticky-cursor {
@@ -35,6 +71,8 @@ a {
 .cursor-hover {
   width: 60px;
   height: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .big-text-wrapper {

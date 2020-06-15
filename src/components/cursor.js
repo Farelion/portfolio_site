@@ -7,9 +7,11 @@ class Cursor extends Component {
         document.addEventListener('mousemove', (e) => {
             const cursor = document.querySelector(".sticky-cursor")
             //adding timeout to create "following" effect
-            setTimeout(function(){             
-                cursor.style.left = e.clientX + `px`
-                cursor.style.top = e.clientY + `px`
+            setTimeout(function(){    
+                cursor.style.transform = 'matrix(1, 0, 0, 1, ' + e.clientX + ', ' + e.clientY  + ')';         
+         
+                /*cursor.style.left = e.clientX + `px`
+                cursor.style.top = e.clientY + `px`*/
             }, 45);
         });
 

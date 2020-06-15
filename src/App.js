@@ -70,23 +70,23 @@ itemsUp.forEach(e => animateWithRandomNumber(e, 1080, -1080))
           <div className="container">
           <svg className="background__lights" id="lines" xmlnsXlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 1080" xmlSpace="preserve" preserveAspectRatio="none">
         <g className="lines">
-          <rect className="line" x="1253.6" width="4.5" height={10800} />
-          <rect className="line" x="873.3" width="1.8" height={10800} />
-          <rect className="line" x={1100} width="1.8" height={10800} />
-          <rect className="line" x="1547.1" width="4.5" height={10800} />
-          <rect className="line" x={615} width="4.5" height={10800} />
-          <rect className="line" x="684.6" width="1.8" height={10800} />
-          <rect className="line" x="1369.4" width="1.8" height={10800} />
-          <rect className="line" x="1310.2" width="0.9" height={10800} />
-          <rect className="line" x="1233.4" width="0.9" height={10800} />
-          <rect className="line" x="124.2" width="0.9" height={10800} />
-          <rect className="line" x="1818.4" width="4.5" height={10800} />
-          <rect className="line" x="70.3" width="4.5" height={10800} />
-          <rect className="line" x="1618.6" width="1.8" height={10800} />
-          <rect className="line" x="455.9" width="1.8" height={10800} />
-          <rect className="line" x="328.7" width="1.8" height={10800} />
-          <rect className="line" x="300.8" width="4.6" height={10800} />
-          <rect className="line" x="1666.4" width="0.9" height={10800} />
+          <rect className="line" x="1253.6" width="4.5" height={1080} />
+          <rect className="line" x="873.3" width="1.8" height={1080} />
+          <rect className="line" x={1100} width="1.8" height={1080} />
+          <rect className="line" x="1547.1" width="4.5" height={1080} />
+          <rect className="line" x={615} width="4.5" height={1080} />
+          <rect className="line" x="684.6" width="1.8" height={1080} />
+          <rect className="line" x="1369.4" width="1.8" height={1080} />
+          <rect className="line" x="1310.2" width="0.9" height={1080} />
+          <rect className="line" x="1233.4" width="0.9" height={1080} />
+          <rect className="line" x="124.2" width="0.9" height={1080} />
+          <rect className="line" x="1818.4" width="4.5" height={1080} />
+          <rect className="line" x="70.3" width="4.5" height={1080} />
+          <rect className="line" x="1618.6" width="1.8" height={1080} />
+          <rect className="line" x="455.9" width="1.8" height={1080} />
+          <rect className="line" x="328.7" width="1.8" height={1080} />
+          <rect className="line" x="300.8" width="4.6" height={1080} />
+          <rect className="line" x="1666.4" width="0.9" height={1080} />
         </g>
         <g className="lights">
           <path className="light1 light" d="M619.5,298.4H615v19.5h4.5V298.4z M619.5,674.8H615v9.8h4.5V674.8z M619.5,135.1H615v5.6h4.5V135.1z         M619.5,55.5H615v68.7h4.5V55.5z" />

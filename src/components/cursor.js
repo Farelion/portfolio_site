@@ -6,9 +6,11 @@ class Cursor extends Component {
         // eventlistener mousemove passing cords of cursor to div that follows cursor
         document.addEventListener('mousemove', (e) => {
             const cursor = document.querySelector(".sticky-cursor")
-            cursor.style.left = e.clientX + `px`
-            cursor.style.top = e.clientY + `px`
-
+            //adding timeout to create "following" effect
+            setTimeout(function(){             
+                cursor.style.left = e.clientX + `px`
+                cursor.style.top = e.clientY + `px`
+            }, 45);
         });
 
 
@@ -46,9 +48,6 @@ class Cursor extends Component {
     
             });
         });
-
-
-
     }
     render() {
         return (

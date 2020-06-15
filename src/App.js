@@ -177,6 +177,19 @@ class App extends React.Component {
 
                       <div className={'content-item ' + this.state.nonCommercial}>
                         <div className="item-wrap">
+                          <div className="item-tag">non-commercial</div>
+                          <div className="item-title">Portfolio</div>
+                          <div className="item-text">My own portfolio site, in fact you're checking it out right now!</div>
+                          <div className="item-links">
+                            <a href="https://farel.netlify.app/" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
+                            <div className="link-center"></div>
+                            <a href="https://github.com/Farelion/portfolio_site" className="link-right"><FontAwesomeIcon icon={faGithub}/></a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className={'content-item ' + this.state.nonCommercial}>
+                        <div className="item-wrap">
                           <div className="item-tag"></div>
                           <div className="item-title">NEW EXCITING PROJECT!</div>
                           <div className="item-text">Coming soon.</div>

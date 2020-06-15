@@ -403,6 +403,7 @@ a {
                         flex-direction: row;
                         font-size: 36px;
                         margin-top: 15px;
+                        z-index: 101;
                         .link-left, .link-right{
                             opacity:0.5;
                             transition: all .2s ease-in-out;

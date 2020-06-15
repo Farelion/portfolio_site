@@ -420,6 +420,7 @@ a {
   flex-direction: row;
   font-size: 36px;
   margin-top: 15px;
+  z-index: 101;
 }
 .site-wrapper .portfolio-wrapper .portfolio .portfolio-content .content-item .item-wrap .item-links .link-left, .site-wrapper .portfolio-wrapper .portfolio .portfolio-content .content-item .item-wrap .item-links .link-right {
   opacity: 0.5;

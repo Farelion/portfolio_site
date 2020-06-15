@@ -80,7 +80,7 @@ class App extends React.Component {
                   <div className="about-me-header">Welcome, I'm Marcin.</div>
                   <div className="about-me-text">
                    I'm self-taught Front-end developer based in Wrocław and currently seeking new job opportunities.
-                   I create apps mostly in JavaScript/React.  
+                   I create apps mostly in JavaScript/React and I would like to continue learning those, but I'm always willing to learn new technologies/languages required for work.  
                   </div>
                   <div className="about-me-info"> 
                     <div className="info-github"><a href="https://github.com/Farelion/"> <FontAwesomeIcon icon={faGithubSquare}/> github.com/Farelion </a></div>

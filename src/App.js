@@ -3,7 +3,7 @@ import './styles/style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
-
+import Cursor from './components/cursor.js'
 
 class App extends React.Component {
   constructor(props) {
@@ -14,25 +14,8 @@ class App extends React.Component {
     this.state = {
       allHighlight: "selected",
       commercial: 'visible',
-      nonCommercial: 'visible',
-      xMain: 0,
-      yMain: 0
+      nonCommercial: 'visible'
     }
-  }
-
-  handleMouseMove = (e) => {
-    const { clientX, clientY } = e;
-    this.setState({
-      xMain: clientX,
-      yMain: clientY,
-    }, () => {
-      setTimeout(() => {
-        this.setState({
-          xTrailing: clientX,
-          yTrailing: clientY,
-        })
-      }, 100);
-    })
   }
 
   showAll(){
@@ -69,22 +52,9 @@ class App extends React.Component {
 
 
   render(){
-     const {
-      xMain,
-      yMain,
-    } = this.state;
-
     return (
       <>
-          <div className='container' onMouseMove={e => this.handleMouseMove(e)}>
-            <div className='cursors'>
-              <div className='cursor' style={{ 
-                  left: xMain, 
-                  top: yMain,
-                }}
-              />
-            </div>
-        
+            
             <div className="big-text-wrapper">
               <div className="big-text-top-wrapper">
                 <div id="big-text-top" className="big-text-top">Marcin Czownicki </div>
@@ -109,11 +79,12 @@ class App extends React.Component {
                 <div className="about-me">
                   <div className="about-me-header">Welcome, I'm Marcin.</div>
                   <div className="about-me-text">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also th
+                   I'm self-taught Front-end developer based in Wrocław and currently seeking new job opportunities.
+                   I create apps mostly in JavaScript/React.  
                   </div>
                   <div className="about-me-info"> 
-                    <div className="info-github"> <FontAwesomeIcon icon={faGithubSquare}/> github.com/Farelion </div>
-                    <div className="info-mail"><FontAwesomeIcon icon={faEnvelope}/> marcinczownicki@gmail.com </div>  
+                    <div className="info-github"><a href="https://github.com/Farelion/"> <FontAwesomeIcon icon={faGithubSquare}/> github.com/Farelion </a></div>
+                    <div className="info-mail"><FontAwesomeIcon icon={faEnvelope}/> marcinczownicki@gmail.com</div>   
                   </div>
                 </div>
               </div>
@@ -147,7 +118,7 @@ class App extends React.Component {
                           <div className="item-tag">commercial</div>
                           <div className="item-title">Ślubu nie będzie</div>
                           <div className="link-center"></div>
-                          <div className="item-text">First commercial project for wedding planning business.</div>
+                          <div className="item-text">First commercial project for wedding planning business. It's made from scratch WordPress theme.</div>
                           <div className="item-links">
                             <a href="https://slubuniebedzie.com/" className="link-left"><FontAwesomeIcon icon={faLink}/></a>
                           </div>
@@ -179,7 +150,7 @@ class App extends React.Component {
                       </div>
 
                       <div className={'content-item ' + this.state.nonCommercial}>
-                        <div className="work-in-prog">WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS</div>
+                        <div className="work-in-prog">WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS WORK IN PROGRESS</div>
                         <div className="item-wrap">
                           <div className="item-tag">non-commercial</div>
                           <div className="item-title">Lootfinder (react)</div>
@@ -206,7 +177,7 @@ class App extends React.Component {
 
                       <div className={'content-item ' + this.state.nonCommercial}>
                         <div className="item-wrap">
-                          <div className="item-tag">non-commercial</div>
+                          <div className="item-tag"></div>
                           <div className="item-title">NEW EXCITING PROJECT!</div>
                           <div className="item-text">Coming soon.</div>
                           <div className="item-links">
@@ -223,13 +194,13 @@ class App extends React.Component {
 
             <div className="mobile-footer">
               <div className="about-me-info"> 
-                    <div className="info-github"> <FontAwesomeIcon icon={faGithubSquare}/> github.com/Farelion </div>
-                    <div className="info-mail"><FontAwesomeIcon icon={faEnvelope}/> marcinczownicki@gmail.com </div>  
+                    <div className="info-github"><a href="https://github.com/Farelion/"> <FontAwesomeIcon icon={faGithubSquare}/> github.com/Farelion </a></div>
+                    <div className="info-mail"><a href="mailto:marcinczownicki@gmail.com"><FontAwesomeIcon icon={faEnvelope}/> marcinczownicki@gmail.com </a></div>  
               </div>
             </div>
             
           </div>
-        </div>
+          <Cursor/>
       </>
     );
   }

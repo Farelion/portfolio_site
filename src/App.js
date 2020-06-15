@@ -5,6 +5,9 @@ import { faLink, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import Cursor from './components/cursor.js'
 import {TweenLite, Linear} from 'gsap/all'
+import { gsap } from 'gsap'
+import { CSSPlugin } from 'gsap/CSSPlugin'
+gsap.registerPlugin(CSSPlugin)
 
 class App extends React.Component {
   constructor(props) {

@@ -5,6 +5,7 @@ import { faLink, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import Cursor from './components/cursor.js'
 import {TweenLite, Linear} from 'gsap/all'
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -57,9 +58,9 @@ componentDidMount(){
 }
 
 const itemsDown = [".light4", ".light5", ".light6", ".light7", ".light8", ".light11", ".light12", ".light13", ".light14", ".light15", ".light16"]
-.forEach(e => animateWithRandomNumber(e, -1080, 1080))
+itemsDown.forEach(e => animateWithRandomNumber(e, -1080, 1080))
 const itemsUp = [".light1", ".light2", ".light3",".light9", ".light10", ".light17"]
-.forEach(e => animateWithRandomNumber(e, 1080, -1080))
+itemsUp.forEach(e => animateWithRandomNumber(e, 1080, -1080))
 }
 
 
